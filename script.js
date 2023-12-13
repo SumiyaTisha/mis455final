@@ -1,5 +1,5 @@
 function searchWeather() {
-    const apiKey = '19506f04dda7898217d5fc54795e51f0'; // Replace with your actual API key
+    const apiKey = '19506f04dda7898217d5fc54795e51f0'; 
     const searchInput = document.getElementById('searchInput').value;
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput}&appid=${apiKey}`;
  
@@ -25,7 +25,7 @@ function searchWeather() {
  
     const cityName = data.name;
     const country = data.sys.country;
-    const temperature = Math.round(data.main.temp - 273.15); // Convert to Celsius
+    const temperature = Math.round(data.main.temp - 273.15); 
  
     const description = data.weather[0].description;
     const iconCode = data.weather[0].icon;
